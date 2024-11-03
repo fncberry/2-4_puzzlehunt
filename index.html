@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2-4 퍼즐헌트</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .title {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 0px;
+        margin-bottom: 100px;
+      }
+      .puzzle-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .Qcell {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+      .Qcell h1 {
+        margin: 0;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title"><b>2-4 PuzzleHunt Event</b></div>
+    <div class="puzzle-list">
+      <div class="Qcell" onclick="openPuzzle('Q1.html')"><h1>Q1</h1></div>
+      <div class="Qcell" onclick="openPuzzle('Q2.html')"><h1>Q2</h1></div>
+      <div class="Qcell" onclick="openPuzzle('Q3.html')"><h1>Q3</h1></div>
+      <div class="Qcell" onclick="openPuzzle('Q4.html')"><h1>Q4</h1></div>
+      <div class="Qcell" onclick="openPuzzle('Q5.html')"><h1>Q5</h1></div>
+      <div class="Qcell" onclick="openPuzzle('Q6.html')"><h1>Q6</h1></div>
+      <div class="Qcell" onclick="openPuzzle('Q7.html')"><h1>Q7</h1></div>
+    </div>
+
+    <script>
+      function openPuzzle(url) {
+        window.location.href = url;
+      }
+    </script>
+  </body>
+</html>

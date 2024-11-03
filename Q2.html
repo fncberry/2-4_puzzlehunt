@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>D5</title>
+    <style>
+      body {
+        font-family: "Nanum Pen Script", cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        position: relative;
+        display: inline-block;
+      }
+      .text {
+        position: absolute;
+        top: 10px; /* 이미지 상단에서의 간격 */
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+        padding: 5px;
+      }
+      .text p {
+        margin-bottom: 30px; /* 원하는 간격 */
+        font-size: 20px;
+      }
+      .text h1 {
+        margin-top: 30px; /* 원하는 간격 */
+        font-size: 50px; /* 원하는 크기로 조정 */
+        font-weight: bold;
+      }
+      .back-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+    <div class="text">
+      <p>
+        "젠장, 29분부터 머리를 말리기 시작한 저녀석이 불안했는데, 역시나 늦게
+        나갔어. 우린 이제 총원점호를 해야만해. 곧 그가 우리를 부를거야"
+      </p>
+      <h1 class="text">집합!!!</h1>
+    </div>
+    <img src="Qimage/Q2.png" />
+    <button class="back-button" onclick="location.href='index.html'">
+      문제 목록으로 돌아가기
+    </button>
+  </body>
+</html>
